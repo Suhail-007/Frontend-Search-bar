@@ -1,0 +1,45 @@
+*, *:: before, *::after {
+		box-sizing: border-box;
+}
+
+.search-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem 0;		
+}
+
+.search-container > label {
+		font-size: clamp(1em, 3vw, 2em);
+}
+
+.search-container > input {
+		font-size: clamp(1em, 3vw, 1.4em);
+		padding: 0.3em;
+}
+
+.user-cards {
+		margin-top: 1rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 1rem;
+}
+
+.card {
+		border: 1px solid #000;
+		padding: 1em;
+}
+
+.card > .name {
+		font-size: clamp(1.1em 3vw 1.4em);
+		font-weight: bold;
+		margin-bottom: 0.5em;
+}
+
+.card .email {
+		font-size: clamp(1em 3vw 1em);
+		color: gray;
+}
+
+.hide {
+		display: none;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+		<title>Search</title>
+</head>
+<body>
+		<main>
+				<section>
+						<div class="search-container">
+								<label for="search">Search</label>
+								<input id="search" type="search" placeholder="Search Here..." data-search>
+						</div>
+						<div class="user-cards" data-user-cards></div>
+						<template data-template-card>
+								<div class="card">
+										<div class="name" data-username></div>
+										<div class="email" data-useremail></div>
+								</div>
+						</template>
+				</section>
+		</main>
+</body>
+</html>
